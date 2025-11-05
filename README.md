@@ -27,7 +27,7 @@ MinIO uses [Sphinx](https://www.sphinx-doc.org/en/master/index.html) to generate
 1. Clone docs repository locally.
 
 ```
-git clone https://github.com/minio/docs && cd docs/
+git clone https://github.com/beborns/docs_minio && cd docs_minio/
 ```
 
 2. Create a new Python virtual environment.
@@ -39,6 +39,8 @@ python3 -m venv venv && source venv/bin/activate
 3. Install all the python and nodejs dependencies
 
 ```
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
 pip install -r requirements.txt && npm install && npm run build
 ```
 
